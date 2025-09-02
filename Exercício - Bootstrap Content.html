@@ -11,10 +11,10 @@
 
 </head>
 
-<body>
+<body class="bg-dark">
 
 
-    <div class="container conteudo-total">
+    <main class="container conteudo-total bg-light">
         <h1>Título destaque
             <small class="text-body-secondary">Com texto secundário</small>
         </h1>
@@ -26,12 +26,12 @@
                 necessitatibus molestias ipsa eius?</u></p>
         <div class="container ">
             <div class="row ">
-                <div class="col-6 ">
+                <div class="col-5 ">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur illo maxime ipsa sapiente
                         magni harum eum tenetur natus soluta tempora vero alias, minima tempore eligendi beatae vel
                         veniam ea accusamus!</p>
                 </div>
-                <div class="col-6 ">
+                <div class="col-5 offset-2 ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorum recusandae vero,
                         reprehenderit, saepe dolores nobis necessitatibus et distinctio ad eligendi harum obcaecati,
                         natus explicabo esse. Eveniet veritatis fuga ab?</p>
@@ -56,34 +56,41 @@
             </div>
         </div>
 
-        <table class="table table-borderless text-center">
-            <tr class="table-dark bg-dark">
-                <th>coluna 1</th>
-                <th>coluna 2</th>
-                <th>coluna 3</th>
-                <th>coluna 4</th>
-            </tr>
-            <tr>
-                <td>texto</td>
-                <td>texto</td>
-                <td>texto</td>
-                <td>texto</td>
-            </tr>
-            <tr>
-                <td>texto</td>
-                <td>texto</td>
-                <td>texto</td>
-                <td>texto</td>
-            </tr>
-            <tr>
-                <td>texto</td>
-                <td>texto</td>
-                <td>texto</td>
-                <td>texto</td>
-            </tr>
-
+        <div class="col-12">
+            <table class="table table-striped ">
+                <thead>
+                    <tr class="table-dark">
+                    <th scope="col">coluna 1</th>
+                    <th scope="col">coluna 2</th>
+                    <th scope="col">coluna 3</th>
+                    <th scope="col">coluna 4</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">texto 1</td>
+                        <td>texto</td>
+                        <td>texto</td>
+                        <td>texto</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">texto 2</td>
+                        <td>texto</td>
+                        <td>texto</td>
+                        <td>texto</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">texto 3</td>
+                        <td>texto</td>
+                        <td>texto</td>
+                        <td>texto</td>
+                    </tr>
+                </tbody>
 
         </table>
+
+        </div>
+
 
         <p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque, mollitia, tenetur eos beatae repellendus
             iste reiciendis temporibus numquam aliquam dolorum sequi amet animi error corporis natus ipsam illum
@@ -91,7 +98,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam saepe dignissimos magni numquam hic sint quis sunt minima ipsum asperiores. Fugiat nam quos labore autem amet fugit tempora eligendi saepe!
         </p>
 
-    </div>
+    </main>
 
 </body>
 
