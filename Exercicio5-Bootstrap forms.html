@@ -11,50 +11,74 @@
       rel="stylesheet"
       href="./projetoBootstrap/assets/libs/icons-1.13.1/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./projetoBootstrap/css/Exercicio5-BootstrapForms.css"
+    />
 
     <title>Bootstrap form</title>
   </head>
   <body>
     <main>
       <div class="container">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
-            </div>
+        <div class="row">
+          <div class="col-12">
+            <form id="meu-form" class="needs-validation" novalidate>
+              <fieldset>
+                <legend>
+                  <h1 class="text-center">Acessar o sistema</h1>
+                </legend>
+                <div class="mb-3">
+                  <label for="email" class="form-label">email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                  <div class="valid-feedback">Tudo certo!</div>
+                  <div class="invalid-feedback">
+                    Preencha corretamente o campo de email
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="senha" class="form-label">senha</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="senha"
+                    required
+                  />
+                  <div class="valid-feedback">Tudo certo!</div>
+                  <div class="invalid-feedback">
+                    Preencha corretamente o campo de senha
+                  </div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="manter-conectado"
+                  />
+                  <label class="form-check-label" for="manter-conectado"
+                    >Mantenha-me conectado</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Entrar
+                </button>
+              </fieldset>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Password</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
+          <div class="col-12">
+            <p class="text-center">
+              <small>Não tem conta? cadastre-se!</small>
+            </p>
           </div>
-          <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Check me out</label
-            >
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
       </div>
     </main>
+    <script src="./projetoBootstrap/assets/libs/bootstrap.bundle.min.js"></script>
+    <script src="./projetoBootstrap/js/script.js"></script>
   </body>
 </html>
