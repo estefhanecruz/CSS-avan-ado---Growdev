@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./projetoBootstrap/css/Bootstrap Components - Card e Carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./projetoBootstrap/assets/libs/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./projetoBootstrap/assets/libs/icons-1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Bootstrap Components - Card e Carousel</title>
+  </head>
+  <body>
+    <!-- https://picsum.photos/1200 -->
+    <div class="container">
+      <div class="card meuCard">
+        <img
+          src="https://picsum.photos/1200"
+          class="card-img-top"
+          alt="Imagem aleatória"
+        />
+        <div class="card-body">
+          <h1 class="card-title">Card title</h1>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <button type="button" class="btn btn-outline-danger">
+            <i class="bi bi-heart-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.pexels.com/photos/12715264/pexels-photo-12715264.jpeg"
+              class="d-block w-100"
+              alt="Imagem aleatória"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/28587139/pexels-photo-28587139.jpeg"
+              class="d-block w-100"
+              alt="Imagem aleatória"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/19649372/pexels-photo-19649372.jpeg"
+              class="d-block w-100"
+              alt="Imagem aleatória"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="./projetoBootstrap/assets/libs/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
